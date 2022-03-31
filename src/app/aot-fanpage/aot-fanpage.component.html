@@ -1,146 +1,365 @@
 <header>
-    <div class="navegacion">
-    <img class="logo" [src]="AOT" alt="aot">
+  <div class="navegacion">
+    <img class="logo" [src]="AOT" alt="aot" />
     <nav>
-        <ul class="menu">
-            <li>Home</li>
-            <li>Personajes</li>
-            <li>Anime</li>
-        </ul>
+      <button class="menu" mat-button>Home</button>
+      <button class="menu" mat-button>Personajes</button>
+      <button class="menu" mat-button>Anime</button>
     </nav>
-    </div>
+  </div>
 </header>
 
 <section class="contenido">
-    <h1>Attack on Titan</h1>
+  <h1>Attack on Titan</h1>
 
-    <p class="sinopsis">Shingeki no Kyojin, también conocida en países de habla hispana como Ataque de los titanes, es una serie de manga japonesa escrita e ilustrada por Hajime Isayama. El manga se publicó en septiembre de 2009 en la revista Bessatsu Shōnen Magazine de la editorial Kōdansha y fue difundida de forma mensual hasta abril de 2021 con un total de 139 capítulos. <br>
+  <p class="sinopsis">
+    Shingeki no Kyojin, también conocida en países de habla hispana como Ataque
+    de los titanes, es una serie de manga japonesa escrita e ilustrada por
+    Hajime Isayama. El manga se publicó en septiembre de 2009 en la revista
+    Bessatsu Shōnen Magazine de la editorial Kōdansha y fue difundida de forma
+    mensual hasta abril de 2021 con un total de 139 capítulos. <br />
 
-    <br> La historia se desarrolla en un mundo ficticio en el que la humanidad está al borde de la extinción a causa de unas criaturas humanoides llamadas «titanes», lo que obliga a los sobrevivientes a refugiarse en tres enormes murallas que impiden el acceso a dichos monstruos. La trama gira en torno a Eren Jaeger quien después de perder a su madre a manos de los titanes, decide unirse al «Ejército de las murallas» junto a su hermana adoptiva y su mejor amigo con el objetivo de vengar la muerte de su madre y destruir la los titanes. Más adelante, descubre que tiene el poder de transformarse en un titán con características especiales, lo que desencadenará toda una serie de acontecimientos. </p>
+    <br />
+    La historia se desarrolla en un mundo ficticio en el que la humanidad está
+    al borde de la extinción a causa de unas criaturas humanoides llamadas
+    «titanes», lo que obliga a los sobrevivientes a refugiarse en tres enormes
+    murallas que impiden el acceso a dichos monstruos. La trama gira en torno a
+    Eren Jaeger quien después de perder a su madre a manos de los titanes,
+    decide unirse al «Ejército de las murallas» junto a su hermana adoptiva y su
+    mejor amigo con el objetivo de vengar la muerte de su madre y destruir la
+    los titanes. Más adelante, descubre que tiene el poder de transformarse en
+    un titán con características especiales, lo que desencadenará toda una serie
+    de acontecimientos.
+  </p>
 
-    <h2>Personajes</h2>
-    <h3>Protagonistas</h3>
+  <h2>Personajes</h2>
+  <h3>Protagonistas</h3>
 
-    <div class="cards">
-    <div>
-        <img [src]="Eren" alt="eren">
-        <h4>Eren Jaeger</h4>
-        <p>Principal protagonista de la historia. Tras perder a su madre a manos de los titanes, se une al ejército con el único propósito de vengarse; pero cuando descubre sus poderes de titán, decide usarlos en defensa de la humanidad. Eren posee los poderes del titán de ataque, el titán fundador, ―ambos adquiridos de su padre―; y más adelante, adquiere el poder del titán martillo de guerra cuando ataca a Marley. Llegó a graduarse en quinto lugar de la promoción de la Tropa de Reclutas N°104 y posteriormente se unió al «Cuerpo de exploración».</p>
-    </div>
+  <div class="cards">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Eren Jaeger</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/Eren.jpg" alt="Eren" />
+        <mat-card-content>
+          <p>
+            Principal protagonista de la historia. Tras perder a su madre a
+            manos de los titanes, se une al ejército con el único propósito de
+            vengarse; pero cuando descubre sus poderes de titán, decide usarlos
+            en defensa de la humanidad. Eren posee los poderes del titán de
+            ataque, el titán fundador, ―ambos adquiridos de su padre―; y más
+            adelante, adquiere el poder del titán martillo de guerra cuando
+            ataca a Marley. Llegó a graduarse en quinto lugar de la promoción de
+            la Tropa de Reclutas N°104 y posteriormente se unió al «Cuerpo de
+            exploración».
+          </p>
+        </mat-card-content>
+      </mat-card>
 
-    <div>
-        <img [src]="Mikasa" alt="mikasa">
-        <h4>Mikasa Ackerman</h4>
-        <p>Es la hermana adoptiva de Eren Jaeger a quien le debe mucho después de salvarla de unos secuestradores que pretendían convertirla en esclava, por lo que mantiene un fuerte vínculo hacía él. Mikasa tuvo un cambio drástico en su personalidad tras el asesinato de sus padres volviéndose bastante reservada. Después de la caída de Shiganshina, decide junto a Eren y Armin unirse al ejército en donde se graduaría primera en la Tropa de Reclutas N°104, y posteriormente se unió al Cuerpo de Exploración para combatir a los titanes.</p>
-    </div>
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Mikasa Ackerman</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../assets/Mikasa.jpg" alt="Mikasa" />
+            <mat-card-content>
+              <p>
+                Es la hermana adoptiva de Eren Jaeger a quien le debe mucho después de
+        salvarla de unos secuestradores que pretendían convertirla en esclava,
+        por lo que mantiene un fuerte vínculo hacía él. Mikasa tuvo un cambio
+        drástico en su personalidad tras el asesinato de sus padres volviéndose
+        bastante reservada. Después de la caída de Shiganshina, decide junto a
+        Eren y Armin unirse al ejército en donde se graduaría primera en la
+        Tropa de Reclutas N°104, y posteriormente se unió al Cuerpo de
+        Exploración para combatir a los titanes.
+              </p>
+            </mat-card-content>
+          </mat-card>
 
-    <div>
-        <img [src]="Armin" alt="armin">
-        <h4>Armin Arlert</h4>
-        <p>Es un amigo de la infancia de Eren Jaeger y Mikasa Ackerman. Aunque físicamente es más débil que el resto de sus compañeros, demuestra una gran inteligencia a través de su capacidad estratégica y soluciones rápidas. Se graduó en la Tropa de Reclutas N°104, y más tarde se unió al Cuerpo de exploración. Durante la batalla para retomar el muro María, Armin quedó al borde de la muerte al ser quemado con el vapor emitido por Bertolt Hoover en su forma de titán colosal. Tras ello, lo inyectaron con un suero para salvarlo, y luego de comerse a Hoover, se convirtió en un titán cambiante.</p>
-    </div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Armin Arlert</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../assets/Armin.jpg" alt="Armin" />
+            <mat-card-content>
+              <p>
+                Es un amigo de la infancia de Eren Jaeger y Mikasa Ackerman. Aunque
+        físicamente es más débil que el resto de sus compañeros, demuestra una
+        gran inteligencia a través de su capacidad estratégica y soluciones
+        rápidas. Se graduó en la Tropa de Reclutas N°104, y más tarde se unió al
+        Cuerpo de exploración. Durante la batalla para retomar el muro María,
+        Armin quedó al borde de la muerte al ser quemado con el vapor emitido
+        por Bertolt Hoover en su forma de titán colosal. Tras ello, lo
+        inyectaron con un suero para salvarlo, y luego de comerse a Hoover, se
+        convirtió en un titán cambiante.
+              </p>
+            </mat-card-content>
+          </mat-card>
 
-    <div>
-        <img [src]="Levi" alt="levi">
-        <h4>Levi Ackerman</h4>
-        <p>Es el capitán del Cuerpo de exploración y considerado como «el soldado más fuerte de la humanidad» debido a sus grandes habilidades al matar titanes. Su personalidad es seria, de carácter firme e ideas claras. Siente un gran respeto por la disciplina, con un perfil respetable como líder, sus órdenes siempre son claras y precisas. Antes de unirse al Cuerpo, era un delincuente famoso en la ciudad «Subterránea».</p>
-    </div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Levi Ackerman</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../assets/Levi.jpg" alt="Levi" />
+            <mat-card-content>
+              <p>
+                Es el capitán del Cuerpo de exploración y considerado como «el soldado
+        más fuerte de la humanidad» debido a sus grandes habilidades al matar
+        titanes. Su personalidad es seria, de carácter firme e ideas claras.
+        Siente un gran respeto por la disciplina, con un perfil respetable como
+        líder, sus órdenes siempre son claras y precisas. Antes de unirse al
+        Cuerpo, era un delincuente famoso en la ciudad «Subterránea».
+              </p>
+            </mat-card-content>
+          </mat-card>
 
-    <div>
-        <img [src]="Historia" alt="historia">
-        <h4>Christa Lenz (Historia Reiss)</h4>
-        <p>Es la hija ilegítima del noble Rod Reiss, última miembro de la familia real Reiss que sigue con vida, compañera de Eren, Mikasa y Armin, se graduó décima en la Tropa de Reclutas Nº104 y posteriormente se unió al Cuerpo de exploración. Es una chica amable con los demás, dispuesta a hacer una buena acción sin importar el precio, aunque demuestra ser tímida y sin saber como reaccionar en ciertas situaciones.</p>
-    </div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Christa Lenz (Historia Reiss)</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../assets/Historia.jpg" alt="Historia" />
+            <mat-card-content>
+              <p>
+                Es la hija ilegítima del noble Rod Reiss, última miembro de la familia
+        real Reiss que sigue con vida, compañera de Eren, Mikasa y Armin, se
+        graduó décima en la Tropa de Reclutas Nº104 y posteriormente se unió al
+        Cuerpo de exploración. Es una chica amable con los demás, dispuesta a
+        hacer una buena acción sin importar el precio, aunque demuestra ser
+        tímida y sin saber como reaccionar en ciertas situaciones.
+              </p>
+            </mat-card-content>
+          </mat-card>
 
-    <div>
-        <img [src]="Hange" alt="hange">
-        <h4>Hange Zoë</h4>
-        <p>Fue la 14º comandante del Cuerpo de exploración, predecesora en el cargo que asumió Armin Arlert. Era una chica muy apasionada por su trabajo e hiperactiva. Demostraba ser una experta combatiente, al derrotar a un titán sin mayores problemas, y poseía grandes habilidades de análisis durante situaciones problemáticas.</p>
-    </div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Hange Zoë</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../assets/Hange.jpg" alt="Hange" />
+            <mat-card-content>
+              <p>
+                Fue la 14º comandante del Cuerpo de exploración, predecesora en el cargo
+        que asumió Armin Arlert. Era una chica muy apasionada por su trabajo e
+        hiperactiva. Demostraba ser una experta combatiente, al derrotar a un
+        titán sin mayores problemas, y poseía grandes habilidades de análisis
+        durante situaciones problemáticas.
+              </p>
+            </mat-card-content>
+          </mat-card>
 
-    <div>
-        <img [src]="Falco" alt="falco">
-        <h4>Falco Grice</h4>
-        <p>Es un eldiano que vivía en la zona de internamiento de Liberio, y junto a Gabi Braun son los protagonistas de la temporada final del anime. Falco ―junto a su hermano Colt― es un candidato a guerrero que busca adquirir el titán blindado de Reiner. Es un joven amable, reflexivo y está enamorado de Gabi a quien busca proteger de la maldición de Ymir. Fue indirectamente responsable del ataque de Eren a Liberio al ser engañado por este.</p>
-    </div>
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Falco Grice</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../assets/Falco.jpg" alt="Falco" />
+            <mat-card-content>
+              <p>
+                Es un eldiano que vivía en la zona de internamiento de Liberio, y junto
+        a Gabi Braun son los protagonistas de la temporada final del anime.
+        Falco ―junto a su hermano Colt― es un candidato a guerrero que busca
+        adquirir el titán blindado de Reiner. Es un joven amable, reflexivo y
+        está enamorado de Gabi a quien busca proteger de la maldición de Ymir.
+        Fue indirectamente responsable del ataque de Eren a Liberio al ser
+        engañado por este.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        
+          <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>Gabi Braun</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="../assets/Gabi.jpg" alt="Gabi" />
+            <mat-card-content>
+              <p>
+                Es una eldiana que vivía en la zona de internamiento de Liberio, y prima
+        de Reiner Braun. Gabi junto a Falco Grice es protagonista de la
+        temporada final del anime. Es una candidata a guerrera ―y la favorita
+        para heredar el titán blindado de su primo―; posee una personalidad
+        explosiva, un fuerte sentido de patriotismo y un profundo odio hacia los
+        eldianos de la isla Paradis. Sobrevive al ataque de Liberio realizado
+        por Eren, y es capturada junto a Falco después de matar a Sasha Blouse.
+              </p>
+            </mat-card-content>
+          </mat-card>
 
-    <div>
-        <img [src]="Gabi" alt="gabi">
-        <h4>Gabi Braun</h4>
-        <p>Es una eldiana que vivía en la zona de internamiento de Liberio, y prima de Reiner Braun. Gabi junto a Falco Grice es protagonista de la temporada final del anime. Es una candidata a guerrera ―y la favorita para heredar el titán blindado de su primo―; posee una personalidad explosiva, un fuerte sentido de patriotismo y un profundo odio hacia los eldianos de la isla Paradis. Sobrevive al ataque de Liberio realizado por Eren, y es capturada junto a Falco después de matar a Sasha Blouse.</p>
-    </div>
-</div>
+  <h3>Antagonistas</h3>
 
-    <h3>Antagonistas</h3>
-
-    <div class="cards">
-    <div>
-        <img [src]="Reiner" alt="reiner">
-        <h4>Reiner Braun</h4>
-        <p>Nació y creció en Liberio, ubicado en «Marley», es hijo ilegítimo de una mujer eldiana y un padre marleyano. Reiner era un chico tranquilo pero al mismo tiempo muy impulsivo, él se unió al programa de guerreros con la esperanza de que su padre pudiese vivir con él y su madre. En el año 845, se infiltró en la isla Paradis junto a Annie Leonhart, Bertolt Hoover y Marcel Galliard con el objetivo de recuperar al titán fundador y devolverlo a Marley. Se graduó segundo en la promoción de la Tropa de Reclutas N° 104 y posteriormente se unió al Cuerpo de exploración.</p>
-    </div>
-
-    <div>
-        <img [src]="Bertholdt" alt="bertholdt">
-        <h4>Bertholdt Hoover</h4>
-        <p>Nació en el país «Marley» y era amigo de la infancia y compañero de Reiner, quien lo acompañaba en cada misión. Su personalidad era de ser tranquilo, tímido y reservado, aunque no tenía iniciativa propia, incluso se consideraba a sí mismo un «cobarde». Se graduó tercero en la promoción Tropa de Reclutas N°104 y posteriormente se unió al Cuerpo de exploración. Junto con Reiner y Annie, poseía la habilidad de transformarse en un titán.</p>
-    </div>
-
-    <div>
-        <img [src]="Anni" alt="anni">
-        <h4>Annie Leonhart</h4>
-        <p>Nació en Liberio, ubicado en «Marley», es una chica de baja estatura, pero que mantiene una buena condición física. Se le considera una chica solitaria con poca empatia hacia los demás, a pesar de ello, demuestra respeto en las personas que aplican la «justicia». Se graduó en cuarto lugar en la Tropa de Reclutas N°104 y luego unirse a la Policía militar, la única de su promoción en hacerlo. Annie destaca por tener una destreza con el uso de armas del equipo de maniobras tridimensional, siendo capaz de eliminar titanes con mucha facilidad.</p>
-    </div>
-
-    <div>
-        <img [src]="Zeke" alt="zeke">
-        <h4>Zeke Jaeger</h4>
-        <p>Es el Jefe de Guerra, líder de los guerreros eldianos que sirven al gobierno de «Marley» con el propósito de recuperar la «Coordenada» y eliminar a los eldianos que habitan las murallas. Durante la mayor parte de su vida, Zeke demostró una profunda lealtad a Marley, quien entregó a sus propios padres a las autoridades de Seguridad Pública luego de que estos lo infiltraran en el programa de guerreros con el propósito de obtener al titán fundador para los restauradores de Eldia. Tiene un carácter frío, cruel, despiadado y sarcástico, aunque no necesariamente sádico.</p>
-    </div>
-
-    <div>
-        <img [src]="Rod" alt="rod">
-        <h4>Rod Reiss</h4>
-        <p>Fue el padre de Historia Reiss, gobernante de facto del reino de las murallas ―en donde ejercía toda la influencia y poder político desde las sombras―, y principal antagonista de la tercera temporada del anime. Su objetivo era recuperar el poder de la familia Reiss robado por Grisha Jaeger, el cual se encontraba dentro de Eren. Para ello intentó hacer que Historia devorara a Eren, y así recuperar dicho poder. Tras fallar en su objetivo, se transformó en un titán gigantesco de 120 metros.</p>
-    </div>
-
-    <div>
-        <img [src]="Kenny" alt="kenny">
-        <h4>Kenny Ackerman</h4>
-        <p>Antiguo asesino, y tío de Levi a quien cuidó durante su niñez después de que su madre muriera. Fue capitán del Escuadrón de Supresión Anti-Humanos de la división Central de la Policía militar, y ―junto a Rod Reiss― ejerció de antagonista en la tercera temporada. Fingió ser la mano derecha de Rod cuando su verdadero objetivo también era devorar a Eren y obtener sus poderes.</p>
-    </div>
-</div>
+  <div class="cards">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Reiner Braun</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/Reiner.jpg" alt="Reiner" />
+        <mat-card-content>
+          <p>
+            Nació y creció en Liberio, ubicado en «Marley», es hijo ilegítimo de una
+        mujer eldiana y un padre marleyano. Reiner era un chico tranquilo pero
+        al mismo tiempo muy impulsivo, él se unió al programa de guerreros con
+        la esperanza de que su padre pudiese vivir con él y su madre. En el año
+        845, se infiltró en la isla Paradis junto a Annie Leonhart, Bertolt
+        Hoover y Marcel Galliard con el objetivo de recuperar al titán fundador
+        y devolverlo a Marley. Se graduó segundo en la promoción de la Tropa de
+        Reclutas N° 104 y posteriormente se unió al Cuerpo de exploración.
+          </p>
+        </mat-card-content>
+      </mat-card>
     
-    <h2>Anime</h2>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Bertholdt Hoover</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/Bertholdt.jpg" alt="Bertholdt" />
+        <mat-card-content>
+          <p>
+            Nació en el país «Marley» y era amigo de la infancia y compañero de
+        Reiner, quien lo acompañaba en cada misión. Su personalidad era de ser
+        tranquilo, tímido y reservado, aunque no tenía iniciativa propia,
+        incluso se consideraba a sí mismo un «cobarde». Se graduó tercero en la
+        promoción Tropa de Reclutas N°104 y posteriormente se unió al Cuerpo de
+        exploración. Junto con Reiner y Annie, poseía la habilidad de
+        transformarse en un titán.
+          </p>
+        </mat-card-content>
+      </mat-card>
 
-    <div class="videos">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/KVUfNqlZg5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Annie Leonhart</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/Anni.jpg" alt="Anni" />
+        <mat-card-content>
+          <p>
+            Nació en Liberio, ubicado en «Marley», es una chica de baja estatura,
+        pero que mantiene una buena condición física. Se le considera una chica
+        solitaria con poca empatia hacia los demás, a pesar de ello, demuestra
+        respeto en las personas que aplican la «justicia». Se graduó en cuarto
+        lugar en la Tropa de Reclutas N°104 y luego unirse a la Policía militar,
+        la única de su promoción en hacerlo. Annie destaca por tener una
+        destreza con el uso de armas del equipo de maniobras tridimensional,
+        siendo capaz de eliminar titanes con mucha facilidad.
+          </p>
+        </mat-card-content>
+      </mat-card>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qfq5JpBsW8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</section>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Zeke Jaeger</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/Zeke.jpg" alt="Zeke" />
+        <mat-card-content>
+          <p>
+            Es el Jefe de Guerra, líder de los guerreros eldianos que sirven al
+        gobierno de «Marley» con el propósito de recuperar la «Coordenada» y
+        eliminar a los eldianos que habitan las murallas. Durante la mayor parte
+        de su vida, Zeke demostró una profunda lealtad a Marley, quien entregó a
+        sus propios padres a las autoridades de Seguridad Pública luego de que
+        estos lo infiltraran en el programa de guerreros con el propósito de
+        obtener al titán fundador para los restauradores de Eldia. Tiene un
+        carácter frío, cruel, despiadado y sarcástico, aunque no necesariamente
+        sádico.
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Rod Reiss</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/Rod.jpg" alt="Rod" />
+        <mat-card-content>
+          <p>
+            Fue el padre de Historia Reiss, gobernante de facto del reino de las
+        murallas ―en donde ejercía toda la influencia y poder político desde las
+        sombras―, y principal antagonista de la tercera temporada del anime. Su
+        objetivo era recuperar el poder de la familia Reiss robado por Grisha
+        Jaeger, el cual se encontraba dentro de Eren. Para ello intentó hacer
+        que Historia devorara a Eren, y así recuperar dicho poder. Tras fallar
+        en su objetivo, se transformó en un titán gigantesco de 120 metros.
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Kenny Ackerman</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/Kenny.jpg" alt="Kenny" />
+        <mat-card-content>
+          <p>
+            Antiguo asesino, y tío de Levi a quien cuidó durante su niñez después de
+        que su madre muriera. Fue capitán del Escuadrón de Supresión
+        Anti-Humanos de la división Central de la Policía militar, y ―junto a
+        Rod Reiss― ejerció de antagonista en la tercera temporada. Fingió ser la
+        mano derecha de Rod cuando su verdadero objetivo también era devorar a
+        Eren y obtener sus poderes.
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+  <h2>Anime</h2>
+
+  <div class="videos">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/KVUfNqlZg5w"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/Qfq5JpBsW8c"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
 
 <footer>
-    <div class="navegacion_footer">
+  <div class="navegacion_footer">
     <nav class="menu_footer">
-        <ul>
-            <li>Home</li>
-            <li>Personajes</li>
-            <li>Anime</li>
-        </ul>
+      <ul>
+        <li>Home</li>
+        <li>Personajes</li>
+        <li>Anime</li>
+      </ul>
     </nav>
 
     <div class="plat">
-    <a href="https://jkanime.net/shingeki-no-kyojin-the-final-season-part-2/" target="_blank"><img class="jka" [src]="jkanime" alt="jkanime"></a>
-    <a href="https://www.crunchyroll.com/es/attack-on-titan" target="_blank"><img class="crunchy" [src]="crunchyroll" alt="crunchyroll"></a>
+      <a
+        href="https://jkanime.net/shingeki-no-kyojin-the-final-season-part-2/"
+        target="_blank"
+        ><img class="jka" [src]="jkanime" alt="jkanime"
+      /></a>
+      <a href="https://www.crunchyroll.com/es/attack-on-titan" target="_blank"
+        ><img class="crunchy" [src]="crunchyroll" alt="crunchyroll"
+      /></a>
     </div>
 
     <div class="copy">
-    <p>Fan Page del anime Shingeki no Kyojin. <br>
-    Todos los derechos reservados. <br>
-    Rosana Valero B 2022 ©</p>
+      <p>
+        Fan Page del anime Shingeki no Kyojin. <br />
+        Todos los derechos reservados. <br />
+        Rosana Valero B 2022 ©
+      </p>
     </div>
-    </div>
-
+  </div>
 </footer>
-
